@@ -12,10 +12,11 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
   selector: 'app-root',
   template: `
     <!-- {{valor}}
-    <button (click)="adicionar()">Adicionar</button> -->
+    <button (click)="adicionar()">Adicionar</button>
     <app-title *ngIf="destruir"></app-title>
     <br>
-    <button (click)="destruirComponent()">Destruir Componente</button>
+    <button (click)="destruirComponent()">Destruir Componente</button> -->
+    <app-diretivas-estruturais></app-diretivas-estruturais>
     <router-outlet></router-outlet>
   `,
 
@@ -24,7 +25,7 @@ export class AppComponent implements OnInit {
 
   //public valor: number = 1;
 
-  public destruir: boolean = true
+  // public destruir: boolean = true
 
   constructor() {
 
@@ -36,9 +37,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  public destruirComponent() {
-    this.destruir = false;
-  }
+  // public destruirComponent() {
+  //   this.destruir = false;
+  // }
 
   // ngDoCheck(): void {
   //   console.log("ngDoCheck")
