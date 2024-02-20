@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 
 @Component({
   selector: 'app-diretivas-estruturais',
@@ -16,6 +16,8 @@ export class DiretivasEstruturaisComponent implements OnInit {
     { nome: 'Larissa', idade: 24},
     { nome: 'Raphael', idade: 1},
 ]
+
+  public nome: string = 'nome';
   
   constructor() { }
 
@@ -46,5 +48,7 @@ export class DiretivasEstruturaisComponent implements OnInit {
   public onClickEventList(event: number) {
     this.list.splice(event, 1)
   }
+
+
 
 }

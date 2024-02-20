@@ -15,8 +15,9 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
     <button (click)="adicionar()">Adicionar</button>
     <app-title *ngIf="destruir"></app-title>
     <br>
-    <button (click)="destruirComponent()">Destruir Componente</button> -->
-    <app-diretivas-estruturais></app-diretivas-estruturais>
+    <button (click)="destruirComponent()">Destruir Componente</button> 
+    <app-diretivas-estruturais></app-diretivas-estruturais>-->
+    <app-diretivas-atributos></app-diretivas-atributos>
     <router-outlet></router-outlet>
   `,
 

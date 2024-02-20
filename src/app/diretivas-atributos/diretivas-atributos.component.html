@@ -1,0 +1,18 @@
+<!-- <div *ngIf="nome != 'William'">
+    <p [ngClass]="{'active' : valor, 'disabled' : !valor}">NgClss</p>
+    <p [ngStyle]="{'height': heigthPX, 'background' : backgroudColor}">NgClss</p>
+
+</div> -->
+
+<hr>
+
+<input [(ngModel)]="nome">
+<button (click)="salvar()">Salvar</button>
+
+<li *ngFor="let item of list">{{ item.nome }}</li>
+
+<ng-template ngFor let-item [ngForOf]="list">
+    <p>
+        {{item.nome}}  -  <!-- Acaba ganhando mais velocidade por não carregar no DOM-->
+    </p>
+</ng-template>
