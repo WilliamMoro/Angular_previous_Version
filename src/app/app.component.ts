@@ -17,7 +17,10 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
     <br>
     <button (click)="destruirComponent()">Destruir Componente</button> 
     <app-diretivas-estruturais></app-diretivas-estruturais>-->
-    <app-diretivas-atributos></app-diretivas-atributos>
+    <app-diretivas-atributos>
+      <h1>Aulas de Diretivas Atributos</h1>
+      <hr> 
+    </app-diretivas-atributos>
     <router-outlet></router-outlet>
   `,
 
