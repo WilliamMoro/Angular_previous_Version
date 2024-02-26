@@ -21,7 +21,7 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
       <h1>Aulas de Diretivas Atributos</h1>
       <hr> 
     </app-diretivas-atributos>
-    <app-new-component></app-new-component>-->
+    <app-new-component></app-new-component>
     <app-input [contador]="addValue"></app-input> <br>
     <button (click)="add()">Add</button>
     <button (click)="menos()">Deleted</button> <hr>
@@ -30,7 +30,9 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
       <h1>{{getDados.nome}}</h1>
       <h2>{{getDados.idade}}</h2>
     </ng-template>
-    <app-output (enviarDados)="setDados($event)"></app-output>
+    <app-output (enviarDados)="setDados($event)"></app-output> -->
+    <app-food-add></app-food-add>
+    <app-food-list></app-food-list>
     <router-outlet></router-outlet>
   `,
 
